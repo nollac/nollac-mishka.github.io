@@ -161,6 +161,10 @@
   visibility: hidden;
 }
 
+.desktop_menu {
+  display: inline-block;
+}
+
 .second_menu_item {
   display: inline-block;
 }
@@ -180,4 +184,8 @@
   font-family: Verdana Regular;
   font-weight: 400;
   color: #444;
+}
+
+.tab_menu {
+  display: none;
 }
