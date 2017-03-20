@@ -43,14 +43,13 @@
 	&:hover
 		opacity: .6
 
+
 .catalog
 	border-right: 1px solid #e7e7e7
 
 .catalog_link
 	padding-left: 0
 
-.order 
-	margin-right: 315px
 
 .logo
 	top: 0
@@ -67,37 +66,51 @@
 	background-position-y: center
 
 .search
-	margin-left: 66px
 	border-left: 1px solid #e7e7e7
 	border-right: 1px solid #e7e7e7
 
 .search_link
 	position: relative
 	padding: 35px 13px
-	& span
-		visibility: hidden
-	&:after
+	& svg
 		position: absolute
-		content: ""
 		top: 38px
-		left: 35px
+		left: 32px
 		width: 18px
 		height: 19px
-		background: url(../img/search.svg) no-repeat
 		opacity: .2
+	&:hover
+		opacity: 1
+		& svg
+			opacity: 1
+			fill: #63d1bb
+
+.search_link_text
+	visibility: hidden
 
 .basket_link
 	padding-right: 0
 	padding-left: 75px
 	position: relative
-	&:after
+	& svg
 		position: absolute
-		content: ""
 		top: 38px
-		left: 30px
-		width: 21px
-		height: 18px
-		background: url(../img/basket.svg) no-repeat
+		left: 32px
+		width: 18px
+		height: 19px
 		opacity: .2
-		
+	&:hover 
+		opacity: 1
+		& svg
+			opacity: 1
+			fill: #63d1bb
 
+.item_wrapper
+	display: inline-block
+	float: right
+	&:after
+		content: ""
+		display: block
+		clear: both
+		height: 0
+		visibility: hidden
