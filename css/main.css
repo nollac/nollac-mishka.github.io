@@ -6,7 +6,7 @@
   position: absolute;
   content: "";
   left: 0;
-  bottom: 0;
+  top: 94px;
   width: 100%;
   height: 1px;
   background: #e7e7e7;
@@ -23,7 +23,8 @@
   background: #fff;
 }
 
-.menu {
+.menu,
+.second_menu {
   position: relative;
   width: 100%;
   font-size: 0;
@@ -38,7 +39,8 @@
   padding: 0;
 }
 
-.menu_link {
+.menu_link,
+.second_menu_link {
   display: inline-block;
   color: black;
   font-family: Verdana;
@@ -49,7 +51,8 @@
   text-decoration: none;
 }
 
-.menu_link:hover {
+.menu_link:hover,
+.second_menu_link:hover {
   opacity: .6;
 }
 
@@ -118,6 +121,11 @@
   position: relative;
 }
 
+.basket_link p {
+  margin: 0;
+  padding: 0;
+}
+
 .basket_link svg {
   position: absolute;
   top: 38px;
@@ -129,6 +137,10 @@
 
 .basket_link:hover {
   opacity: 1;
+}
+
+.basket_link:hover p {
+  opacity: .6;
 }
 
 .basket_link:hover svg {
@@ -147,4 +159,25 @@
   clear: both;
   height: 0;
   visibility: hidden;
+}
+
+.second_menu_item {
+  display: inline-block;
+}
+
+.second_menu_link {
+  font-size: 14px;
+  padding: 19px 35px;
+}
+
+.new_arrivals {
+  padding-left: 0;
+  padding-right: 28px;
+}
+
+.delivery {
+  padding-right: 0;
+  font-family: Verdana Regular;
+  font-weight: 400;
+  color: #444;
 }
