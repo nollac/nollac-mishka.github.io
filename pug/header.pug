@@ -1,35 +1,40 @@
 header.header
 	.container
 		nav.navigation
-			ul.menu
-				li.menu_item.catalog
-					a(href="#").menu_link.catalog_link Каталог товаров
-				li.menu_item.order
-					a(href="#").menu_link Вязание на заказ
-				li.menu_item.logo
-					a(href="#").logo_pic
-				.item_wrapper
+			a.trigger(href="#")
+				span.trigger_line
+			.logo
+				a(href="#").logo_pic
+			ul.menu.clearfix
+				.item_wrapper_left
+					li.menu_item.catalog
+						a(href="#").menu_link.catalog_link Каталог товаров
+					li.menu_item.order
+						a(href="#").menu_link.order_link Вязание на заказ
+				.item_wrapper_right
 					li.menu_item.search
 						a(href="#").menu_link.search_link
-							span 
-								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.6 17.6"><defs><style>.search_link_icon{fill:#231f20;}</style></defs><title>Vector Smart Object3</title><path class="cls-1" d="M16.47,14.93l-3.41-3.42a7.75,7.75,0,1,0-1.54,1.54l3.42,3.42a1,1,0,0,0,.77.33,1.1,1.1,0,0,0,1.1-1.1A1,1,0,0,0,16.47,14.93ZM1.4,6.9a5.5,5.5,0,1,1,5.5,5.5A5.5,5.5,0,0,1,1.4,6.9Z" transform="translate(0.8 0.8)"/></svg>
-							span.search_link_text Поиск
+							span.search_link_ic 
+								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.6 17.6"><defs><style>.search_link_svg{fill:#231f20;}</style></defs><title>Vector Smart Object3</title><path class="cls-1" d="M16.47,14.93l-3.41-3.42a7.75,7.75,0,1,0-1.54,1.54l3.42,3.42a1,1,0,0,0,.77.33,1.1,1.1,0,0,0,1.1-1.1A1,1,0,0,0,16.47,14.93ZM1.4,6.9a5.5,5.5,0,1,1,5.5,5.5A5.5,5.5,0,0,1,1.4,6.9Z" transform="translate(0.8 0.8)"/></svg>
+							span.search_link_text Поиск по сайту
 					li.menu_item.basket
 						a(href="#").menu_link.basket_link 
 							<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.29 18.85"><defs><style>.basket_link_icon{fill:#231f20;}</style></defs><title>Vector Smart Object4</title><path class="cls-1" d="M19.54,7.23H16.39L13,.41a.75.75,0,1,0-1.34.67l3.07,6.14H5.58L8.65,1.09A.75.75,0,1,0,7.31.41L3.9,7.23H.75a.75.75,0,1,0,0,1.5H.91l.85,3a.73.73,0,0,0,.38,1.33L3.8,18.85H16.5l1.66-5.79a.74.74,0,0,0,.7-.74.74.74,0,0,0-.32-.6l.85-3h.16a.75.75,0,0,0,0-1.5ZM15.36,17.35H4.93L3.71,13.06H16.59ZM17,11.56H3.28L2.47,8.73H17.83Z" transform="translate(0 0)"/></svg>
 							p Корзина: 
 								span пока пуста
-		ul.second_menu
+.second_menu
+	.container
+		ul.second_menu_list.clearfix
 			.desktop_menu
 				li.second_menu_item
-					a(href="#").second_menu_link.new_arrivals Новые поступления
+					a(href="#").second_menu_link.new_arrivals_link Новые поступления
 				li.second_menu_item
-					a(href="#").second_menu_link.sale Распродажа
-			.tab_menu
+					a(href="#").second_menu_link.sale_link Распродажа
+			.tablet_menu
 				li.second_menu_item
-					a(href="#").second_menu_link.mob_catalog_link Каталог Товаров
+					a(href="#").second_menu_link.tablet_catalog_link Каталог Товаров
 				li.second_menu_item
-					a(href="#").second_menu_link.order Вязание на заказ
-			.item_wrapper
+					a(href="#").second_menu_link.tablet_order_link Вязание на заказ
+			.item_wrapper_right
 				li.second_menu_item
 					a(href="#").second_menu_link.delivery Бесплатная доставка по России

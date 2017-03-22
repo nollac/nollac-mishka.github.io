@@ -1,25 +1,34 @@
+html
+	box-sizing: border-box
+
+.clearfix::after 
+	content: ""
+	display: block
+	clear: both
+
 .header
 	position: relative
 	&:after
 		position: absolute
 		content: ""
 		left: 0
-		top: 94px
+		top: 88px
 		width: 100%
 		height: 1px
 		background: #e7e7e7
 
 .container 
 	max-width: 1150px
-	width: 100%
+	// width: 100%
 	margin: 0 auto
 	padding: 0 50px
 
 .navigation
 	background: #fff
+	position: relative
 
 .menu,
-.second_menu
+.second_menu_list
 	position: relative
 	width: 100%
 	font-size: 0
@@ -40,7 +49,7 @@
 	font-size: 16px
 	font-weight: 700
 	line-height: 24px
-	padding: 35px 35px
+	padding: 32px 35px
 	text-decoration: none
 	&:hover
 		opacity: .6
@@ -54,6 +63,7 @@
 
 
 .logo
+	display: inline-block
 	top: 0
 	left: calc(50% - 75px)
 	position: absolute
@@ -62,8 +72,7 @@
 
 .logo_pic
 	display: inline-block
-	width: 150px
-	height: 93px
+	padding: 47px 75px
 	background: url(../img/logo-desktop.svg) no-repeat
 	background-position-y: center
 
@@ -73,7 +82,9 @@
 
 .search_link
 	position: relative
-	padding: 35px 13px
+	padding: 32px 35px
+	& .search_link_ic 
+		padding: 6px
 	& svg
 		position: absolute
 		top: 38px
@@ -88,7 +99,7 @@
 			fill: #63d1bb
 
 .search_link_text
-	visibility: hidden
+	display: none
 
 .basket_link
 	padding-right: 0
@@ -112,18 +123,17 @@
 			opacity: 1
 			fill: #63d1bb		
 
-.item_wrapper
+.item_wrapper_left
+	display: inline-block
+	float: left
+
+.item_wrapper_right
 	display: inline-block
 	float: right
-	&:after
-		content: ""
-		display: block
-		clear: both
-		height: 0
-		visibility: hidden
-
+	
 .desktop_menu
 	display: inline-block
+	float: left
 
 .second_menu_item
 	display: inline-block
@@ -132,7 +142,10 @@
 	font-size: 14px
 	padding: 19px 35px
 
-.new_arrivals
+.tablet_order_link
+	padding-left: 0
+
+.new_arrivals_link
 	padding-left: 0
 	padding-right: 28px
 
@@ -142,5 +155,125 @@
 	font-weight: 400
 	color: #444
 
-.tab_menu
+.tablet_menu
 	display: none
+
+.tablet_catalog_link 
+	padding-left: 0
+
+// .mob_menu
+// 	position: absolute
+// 	top: 0
+// 	right: 0
+// 	padding: 35px
+// 	display: none
+
+// .trigger_line
+// 	padding: 3px 12px
+// 	background: linear-gradient(to bottom, black, black 20%, white 20%, white 40%, black 40%, black 60%, white 60%, white 80%, black 80%, black 100%);
+
+.trigger 
+	position: absolute
+	top: 10px
+	right: 0
+	padding: 35px
+	font-size: 0
+	box-sizing: content-box
+
+
+.trigger_line 
+	position: relative
+	display: inline-block
+	padding: 1px 10px
+	vertical-align: bottom
+	background: #000
+	transition: background .3s .5s
+	&::before
+		content: ""
+		position: absolute
+		top: -4px
+		left: 0
+		width: 100%
+		height: 2px
+		background: #000
+		transform-origin: 50% 50%
+		transition: top .3s .3s,transform .3s
+		transition: top .3s .3s,transform .3s
+	
+	
+	&:after
+		content: ""
+		position: absolute
+		top: 4px
+		left: 0
+		width: 100%
+		height: 2px
+		background: #000
+		transform-origin: 50% 50%
+		transition: top .3s .3s,transform .3s
+		transition: top .3s .3s,transform .3s
+	
+
+
+.trigger--show .trigger_line 
+	width: 28px
+	background: 0 0
+	transition: background 0s linear
+
+
+.trigger--show .trigger_line::before,
+.trigger--show .trigger_line::after 
+	width: 28px
+	top: 10px
+	right: 0
+	transition: top .3s,transform .3s .5s
+
+
+.trigger--show .trigger_line::before 
+	transform: rotate3d(0,0,1,45deg)
+
+
+.trigger--show .trigger_line::after 
+	transform: rotate3d(0,0,1,-45deg)
+
+
+
+.menu.active
+	position: absolute
+	top: 89px
+	right: 0
+	display: block
+	width: 260px
+	& .item_wrapper_left
+		display: block
+		float: none
+
+	& .item_wrapper_right
+		display: block
+		float: none
+
+	& .menu_item
+		display: block
+		border-bottom: 1px solid #e7e7e7
+
+	& .menu_link
+		padding: 32px 35px
+
+	& .catalog_link
+		padding-right: 72px
+
+	& .order_link 
+		padding-right: 64px
+
+	& .search, .catalog
+		border-right: none
+		border-left: none
+
+	& .search_link
+		padding-right: 84px
+
+	& .search_link svg, .basket_link svg
+		left: 0
+
+	& .search_link_text
+		display: inline-block
