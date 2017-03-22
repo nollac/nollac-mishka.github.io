@@ -117,12 +117,11 @@ html {
   opacity: .2;
 }
 
-.search_link:hover {
+.search_link:hover svg {
   opacity: 1;
 }
 
-.search_link:hover svg {
-  opacity: 1;
+.search_link:hover svg .search_link_svg {
   fill: #63d1bb;
 }
 
@@ -350,4 +349,75 @@ html {
 
 .menu.active .search_link_text {
   display: inline-block;
+}
+
+footer {
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.footer_logo {
+  display: inline-block;
+  float: left;
+  padding: 75px 51px;
+  background: url(../img/logo-mobile.svg) no-repeat;
+  background-position-y: center;
+}
+
+.social {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  margin-top: 55px;
+  padding: 0;
+}
+
+.social_link {
+  padding: 20px;
+}
+
+.inst svg {
+  width: 20px;
+}
+
+.fb svg {
+  width: 15px;
+}
+
+.twitter svg {
+  width: 24px;
+}
+
+.social_item {
+  display: inline-block;
+}
+
+.design {
+  display: inline-block;
+  float: right;
+}
+
+.design_text {
+  display: inline-block;
+  color: black;
+  font-family: Verdana;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  padding-top: 20px;
+}
+
+.design_ic_link {
+  display: inline-block;
+  padding: 20px;
+  padding-right: 0;
+  vertical-align: middle;
+}
+
+.design_ic {
+  width: 20px;
+}
+
+.design_ic_style {
+  fill: #63d1bb;
 }
