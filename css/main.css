@@ -11,6 +11,7 @@ html {
 
 .header {
   position: relative;
+  padding-bottom: 100px;
 }
 
 .header:after {
@@ -81,6 +82,7 @@ html {
   left: -webkit-calc(50% - 75px);
   left: calc(50% - 75px);
   position: absolute;
+  z-index: 10;
 }
 
 .logo:hover {
@@ -89,7 +91,7 @@ html {
 
 .logo_pic {
   display: inline-block;
-  padding: 47px 75px;
+  padding: 44px 75px;
   background: url(../img/logo-desktop.svg) no-repeat;
   background-position-y: center;
 }
@@ -303,6 +305,8 @@ html {
   right: calc(50% - 130px);
   display: block;
   width: 260px;
+  background: #fff;
+  z-index: 10;
 }
 
 .menu.active .item_wrapper_left {
@@ -352,6 +356,7 @@ html {
 }
 
 footer {
+  margin-top: 100px;
   background: #f1f1f1;
   text-align: center;
 }
@@ -359,9 +364,16 @@ footer {
 .footer_logo {
   display: inline-block;
   float: left;
-  padding: 75px 51px;
-  background: url(../img/logo-mobile.svg) no-repeat;
-  background-position-y: center;
+}
+
+.footer_logo .footer_logo_svg {
+  width: 102px;
+  padding: 54px 51px;
+  padding-left: 0;
+}
+
+.footer_logo:hover .footer_logo_svg {
+  fill: #46c1ae;
 }
 
 .social {
@@ -374,6 +386,12 @@ footer {
 
 .social_link {
   padding: 20px;
+}
+
+.social_link:hover .inst,
+.social_link:hover .fb,
+.social_link:hover .twitter {
+  fill: #46c1ae;
 }
 
 .inst svg {
@@ -393,21 +411,23 @@ footer {
 }
 
 .design {
+  position: relative;
   display: inline-block;
   float: right;
 }
 
-.design_text {
+.design_text_link {
   display: inline-block;
   color: black;
   font-family: Verdana;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  padding-top: 20px;
+  padding: 40px 0;
+  text-decoration: none;
 }
 
-.design_ic_link {
+.design_ic {
   display: inline-block;
   padding: 20px;
   padding-right: 0;

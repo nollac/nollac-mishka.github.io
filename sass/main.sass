@@ -8,6 +8,7 @@ html
 
 .header
 	position: relative
+	padding-bottom: 100px // DEV !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	&:after
 		position: absolute
 		content: ""
@@ -68,12 +69,13 @@ html
 	top: 0
 	left: calc(50% - 75px)
 	position: absolute
+	z-index: 10
 	&:hover
 		opacity: .6
 
 .logo_pic
 	display: inline-block
-	padding: 47px 75px
+	padding: 44px 75px
 	background: url(../img/logo-desktop.svg) no-repeat
 	background-position-y: center
 
@@ -233,6 +235,8 @@ html
 	right: calc(50% - 130px)
 	display: block
 	width: 260px
+	background: #fff
+	z-index: 10
 	& .item_wrapper_left
 		display: block
 		float: none
@@ -272,15 +276,19 @@ html
 // FOOTER
 
 footer
+	margin-top: 100px // DEV !!!!!!!!!!!!!!!!!!!!!!!!!!!
 	background: #f1f1f1
 	text-align: center
 
 .footer_logo
 	display: inline-block
 	float: left
-	padding: 75px 51px
-	background: url(../img/logo-mobile.svg) no-repeat
-	background-position-y: center
+	& .footer_logo_svg
+		width: 102px
+		padding: 54px 51px
+		padding-left: 0
+	&:hover .footer_logo_svg
+		fill: #46c1ae
 
 .social
 	display: inline-block
@@ -291,6 +299,10 @@ footer
 
 .social_link
 	padding: 20px
+	&:hover .inst,
+	&:hover .fb,
+	&:hover .twitter
+		fill: #46c1ae
 
 .inst svg
 	width: 20px
@@ -301,25 +313,26 @@ footer
 .twitter svg 
 	width: 24px
 
-
 .social_item
 	display: inline-block
 
 .design
+	position: relative
 	display: inline-block
 	float: right
 
 
-.design_text
+.design_text_link
 	display: inline-block
 	color: black
 	font-family: Verdana 
 	font-size: 18px
 	font-weight: 700
 	line-height: 18px
-	padding-top: 20px
+	padding: 40px 0
+	text-decoration: none
 
-.design_ic_link
+.design_ic
 	display: inline-block
 	padding: 20px
 	padding-right: 0
