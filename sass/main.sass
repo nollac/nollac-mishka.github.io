@@ -161,28 +161,19 @@ html
 .tablet_catalog_link 
 	padding-left: 0
 
-// .mob_menu
-// 	position: absolute
-// 	top: 0
-// 	right: 0
-// 	padding: 35px
-// 	display: none
-
-// .trigger_line
-// 	padding: 3px 12px
-// 	background: linear-gradient(to bottom, black, black 20%, white 20%, white 40%, black 40%, black 60%, white 60%, white 80%, black 80%, black 100%);
-
 .trigger 
+	display: none
 	position: absolute
-	top: 10px
+	top: 0
 	right: 0
-	padding: 35px
+	padding: 44px
 	font-size: 0
 	box-sizing: content-box
 
-
 .trigger_line 
-	position: relative
+	position: absolute
+	top: 45px
+	right: 0
 	display: inline-block
 	padding: 1px 10px
 	vertical-align: bottom
@@ -200,7 +191,6 @@ html
 		transition: top .3s .3s,transform .3s
 		transition: top .3s .3s,transform .3s
 	
-	
 	&:after
 		content: ""
 		position: absolute
@@ -215,25 +205,24 @@ html
 	
 
 
-.trigger--show .trigger_line 
-	width: 28px
+.trigger_show .trigger_line 
 	background: 0 0
 	transition: background 0s linear
 
 
-.trigger--show .trigger_line::before,
-.trigger--show .trigger_line::after 
-	width: 28px
-	top: 10px
-	right: 0
+.trigger_show .trigger_line::before,
+.trigger_show .trigger_line::after 
+	width: 20px
+	top: 0px
+	right: -10px
 	transition: top .3s,transform .3s .5s
 
 
-.trigger--show .trigger_line::before 
+.trigger_show .trigger_line::before 
 	transform: rotate3d(0,0,1,45deg)
 
 
-.trigger--show .trigger_line::after 
+.trigger_show .trigger_line::after 
 	transform: rotate3d(0,0,1,-45deg)
 
 
@@ -241,7 +230,7 @@ html
 .menu.active
 	position: absolute
 	top: 89px
-	right: 0
+	right: calc(50% - 130px)
 	display: block
 	width: 260px
 	& .item_wrapper_left
