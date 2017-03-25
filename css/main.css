@@ -479,6 +479,7 @@ footer {
 
 .categories_wave svg {
   height: 34px;
+  fill: #fff;
 }
 
 .category_item {
@@ -510,6 +511,10 @@ footer {
   line-height: 30px;
   padding: 30px 40px;
   padding-bottom: 46px;
+}
+
+.category_link:hover {
+  opacity: .6;
 }
 
 .category_ic {
