@@ -460,13 +460,29 @@ footer {
   text-align: center;
   margin: 0 auto;
   padding-top: 65px;
+  margin-bottom: 33%;
 }
 
 .categories {
+  position: relative;
   font-size: 0;
+  overflow: hidden;
+}
+
+.categories_wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 33px;
+}
+
+.categories_wave svg {
+  height: 34px;
 }
 
 .category_item {
+  position: relative;
   width: 50%;
 }
 
@@ -493,4 +509,28 @@ footer {
   font-weight: 700;
   line-height: 30px;
   padding: 30px 40px;
+  padding-bottom: 46px;
+}
+
+.category_ic {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  opacity: .5;
+}
+
+.category_ic_interior svg {
+  width: 41px;
+}
+
+.category_ic_interior svg path {
+  fill: #149080;
+}
+
+.category_ic_toys svg {
+  width: 61px;
+}
+
+.category_ic_toys svg path {
+  fill: #149080;
 }
