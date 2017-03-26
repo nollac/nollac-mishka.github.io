@@ -446,8 +446,7 @@ footer {
 }
 
 .presentation {
-  background: url("../img/content/hero-desktop.jpg") no-repeat;
-  background-position: center top;
+  background: url("../img/content/hero-desktop.jpg") no-repeat center center;
 }
 
 .presentation_title {
@@ -458,8 +457,8 @@ footer {
   font-weight: 700;
   line-height: 57px;
   text-align: center;
+  padding-top: 90px;
   margin: 0 auto;
-  padding-top: 65px;
   margin-bottom: 33%;
 }
 
@@ -509,7 +508,7 @@ footer {
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
-  padding: 30px 40px;
+  padding: 25px 40px;
   padding-bottom: 46px;
 }
 

@@ -62,6 +62,31 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .presentation {
+    background-position: center top;
+  }
+
+  .presentation_title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .category_link {
+    padding: 25px 40px 45px 40px;
+  }
+
+  .categories_wave {
+    height: 23px;
+    left: -8px;
+  }
+
+  .categories_wave svg {
+    width: 746px;
+    height: 24px;
+  }
+}
+
 @media only screen and (max-width: 670px) {
   .tablet_order_link {
     padding-right: 15px;

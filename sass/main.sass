@@ -1,429 +1,428 @@
 html
-	box-sizing: border-box
+  box-sizing: border-box
 
-.clearfix::after 
-	content: ""
-	display: block
-	clear: both
+.clearfix::after
+  content: ""
+  display: block
+  clear: both
 
 .header
-	position: relative
-	&:after
-		position: absolute
-		content: ""
-		left: 0
-		top: 88px
-		width: 100%
-		height: 1px
-		background: #e7e7e7
+  position: relative
+  &:after
+    position: absolute
+    content: ""
+    left: 0
+    top: 88px
+    width: 100%
+    height: 1px
+    background: #e7e7e7
 
-.container 
-	max-width: 1150px
-	margin: 0 auto
-	padding: 0 50px
+.container
+  max-width: 1150px
+  margin: 0 auto
+  padding: 0 50px
 
 // HEADER
 
 .navigation
-	background: #fff
-	position: relative
+  background: #fff
+  position: relative
 
 .menu,
 .second_menu_list
-	position: relative
-	width: 100%
-	font-size: 0
-	margin: 0
-	padding: 0
-	list-style: none
+  position: relative
+  width: 100%
+  font-size: 0
+  margin: 0
+  padding: 0
+  list-style: none
 
 .menu_item
-	display: inline-block
-	margin: 0
-	padding: 0
+  display: inline-block
+  margin: 0
+  padding: 0
 
 .menu_link,
 .second_menu_link
-	display: inline-block
-	color: black
-	font-family: Verdana
-	font-size: 16px
-	font-weight: 700
-	line-height: 24px
-	padding: 32px 35px
-	text-decoration: none
-	&:hover
-		opacity: .6
+  display: inline-block
+  color: black
+  font-family: Verdana
+  font-size: 16px
+  font-weight: 700
+  line-height: 24px
+  padding: 32px 35px
+  text-decoration: none
+  &:hover
+    opacity: .6
 
 
 .catalog
-	border-right: 1px solid #e7e7e7
+  border-right: 1px solid #e7e7e7
 
 .catalog_link
-	padding-left: 0
+  padding-left: 0
 
 
 .logo
-	display: inline-block
-	top: 0
-	left: calc(50% - 75px)
-	position: absolute
-	z-index: 10
-	&:hover
-		opacity: .6
+  display: inline-block
+  top: 0
+  left: calc(50% - 75px)
+  position: absolute
+  z-index: 10
+  &:hover
+    opacity: .6
 
 .logo_pic
-	display: inline-block
-	padding: 44px 75px
-	background: url(../img/logo-desktop.svg) no-repeat
-	background-position-y: center
+  display: inline-block
+  padding: 44px 75px
+  background: url(../img/logo-desktop.svg) no-repeat
+  background-position-y: center
 
 .search
-	border-left: 1px solid #e7e7e7
-	border-right: 1px solid #e7e7e7
+  border-left: 1px solid #e7e7e7
+  border-right: 1px solid #e7e7e7
 
 .search_link
-	position: relative
-	padding: 32px 35px
-	& .search_link_ic 
-		padding: 6px
-	& svg
-		position: absolute
-		top: 38px
-		left: 32px
-		width: 18px
-		height: 19px
-		opacity: .2
-	&:hover svg
-		opacity: 1
-		& .search_link_svg 
-			fill: #63d1bb
+  position: relative
+  padding: 32px 35px
+  & .search_link_ic
+    padding: 6px
+  & svg
+    position: absolute
+    top: 38px
+    left: 32px
+    width: 18px
+    height: 19px
+    opacity: .2
+  &:hover svg
+    opacity: 1
+    & .search_link_svg
+      fill: #63d1bb
 
 .search_link_text
-	display: none
+  display: none
 
 .basket_link
-	padding-right: 0
-	padding-left: 75px
-	position: relative
-	& p
-		margin: 0
-		padding: 0
-	& svg
-		position: absolute
-		top: 38px
-		left: 32px
-		width: 18px
-		height: 19px
-		opacity: .2
-	&:hover 
-		opacity: 1
-		& p
-			opacity: .6
-		& svg
-			opacity: 1
-			fill: #63d1bb
+  padding-right: 0
+  padding-left: 75px
+  position: relative
+  & p
+    margin: 0
+    padding: 0
+  & svg
+    position: absolute
+    top: 38px
+    left: 32px
+    width: 18px
+    height: 19px
+    opacity: .2
+  &:hover
+    opacity: 1
+    & p
+      opacity: .6
+    & svg
+      opacity: 1
+      fill: #63d1bb
 
 .item_wrapper_left
-	display: inline-block
-	float: left
+  display: inline-block
+  float: left
 
 .item_wrapper_right
-	display: inline-block
-	float: right
-	
+  display: inline-block
+  float: right
+
 .desktop_menu
-	display: inline-block
-	float: left
+  display: inline-block
+  float: left
 
 .second_menu_item
-	display: inline-block
+  display: inline-block
 
 .second_menu_link
-	font-size: 14px
-	padding: 19px 35px
+  font-size: 14px
+  padding: 19px 35px
 
 .tablet_order_link
-	padding-left: 0
+  padding-left: 0
 
 .new_arrivals_link
-	padding-left: 0
-	padding-right: 28px
+  padding-left: 0
+  padding-right: 28px
 
 .delivery
-	padding-right: 0
-	font-family: Verdana Regular 
-	font-weight: 400
-	color: #444
+  padding-right: 0
+  font-family: Verdana Regular
+  font-weight: 400
+  color: #444
 
 .tablet_menu
-	display: none
+  display: none
 
-.tablet_catalog_link 
-	padding-left: 0
+.tablet_catalog_link
+  padding-left: 0
 
-.trigger 
-	display: none
-	position: absolute
-	top: 0
-	right: 0
-	padding: 44px
-	font-size: 0
-	box-sizing: content-box
+.trigger
+  display: none
+  position: absolute
+  top: 0
+  right: 0
+  padding: 44px
+  font-size: 0
+  box-sizing: content-box
 
-.trigger_line 
-	position: absolute
-	top: 45px
-	right: 0
-	display: inline-block
-	padding: 1px 10px
-	vertical-align: bottom
-	background: #000
-	transition: background .3s .5s
-	&::before
-		content: ""
-		position: absolute
-		top: -4px
-		left: 0
-		width: 100%
-		height: 2px
-		background: #000
-		transform-origin: 50% 50%
-		transition: top .3s .3s,transform .3s
-		transition: top .3s .3s,transform .3s
-	
-	&:after
-		content: ""
-		position: absolute
-		top: 4px
-		left: 0
-		width: 100%
-		height: 2px
-		background: #000
-		transform-origin: 50% 50%
-		transition: top .3s .3s,transform .3s
-		transition: top .3s .3s,transform .3s
-	
+.trigger_line
+  position: absolute
+  top: 45px
+  right: 0
+  display: inline-block
+  padding: 1px 10px
+  vertical-align: bottom
+  background: #000
+  transition: background .3s .5s
+  &::before
+    content: ""
+    position: absolute
+    top: -4px
+    left: 0
+    width: 100%
+    height: 2px
+    background: #000
+    transform-origin: 50% 50%
+    transition: top .3s .3s,transform .3s
+    transition: top .3s .3s,transform .3s
+
+  &:after
+    content: ""
+    position: absolute
+    top: 4px
+    left: 0
+    width: 100%
+    height: 2px
+    background: #000
+    transform-origin: 50% 50%
+    transition: top .3s .3s,transform .3s
+    transition: top .3s .3s,transform .3s
 
 
-.trigger_show .trigger_line 
-	background: 0 0
-	transition: background 0s linear
+
+.trigger_show .trigger_line
+  background: 0 0
+  transition: background 0s linear
 
 
 .trigger_show .trigger_line::before,
-.trigger_show .trigger_line::after 
-	width: 20px
-	top: 0
-	right: -10px
-	transition: top .3s,transform .3s .5s
+.trigger_show .trigger_line::after
+  width: 20px
+  top: 0
+  right: -10px
+  transition: top .3s,transform .3s .5s
 
 
-.trigger_show .trigger_line::before 
-	transform: rotate3d(0,0,1,45deg)
+.trigger_show .trigger_line::before
+  transform: rotate3d(0,0,1,45deg)
 
 
-.trigger_show .trigger_line::after 
-	transform: rotate3d(0,0,1,-45deg)
+.trigger_show .trigger_line::after
+  transform: rotate3d(0,0,1,-45deg)
 
 
 
 .menu.active
-	position: absolute
-	top: 89px
-	right: calc(50% - 130px)
-	display: block
-	width: 260px
-	background: #fff
-	z-index: 10
-	& .item_wrapper_left
-		display: block
-		float: none
+  position: absolute
+  top: 89px
+  right: calc(50% - 130px)
+  display: block
+  width: 260px
+  background: #fff
+  z-index: 10
+  & .item_wrapper_left
+    display: block
+    float: none
 
-	& .item_wrapper_right
-		display: block
-		float: none
+  & .item_wrapper_right
+    display: block
+    float: none
 
-	& .menu_item
-		display: block
-		border-bottom: 1px solid #e7e7e7
+  & .menu_item
+    display: block
+    border-bottom: 1px solid #e7e7e7
 
-	& .menu_link
-		padding: 32px 35px
+  & .menu_link
+    padding: 32px 35px
 
-	& .catalog_link
-		padding-right: 72px
+  & .catalog_link
+    padding-right: 72px
 
-	& .order_link 
-		padding-right: 64px
+  & .order_link
+    padding-right: 64px
 
-	& .search, .catalog
-		border-right: none
-		border-left: none
+  & .search, .catalog
+    border-right: none
+    border-left: none
 
-	& .search_link
-		padding-right: 84px
+  & .search_link
+    padding-right: 84px
 
-	& .search_link svg, .basket_link svg
-		left: 0
+  & .search_link svg, .basket_link svg
+    left: 0
 
-	& .search_link_text
-		display: inline-block
+  & .search_link_text
+    display: inline-block
 
 // END HEADER
 
 // FOOTER
 
 footer
-	margin-top: 100px // DEV !!!!!!!!!!!!!!!!!!!!!!!!!!!
-	background: #f1f1f1
-	text-align: center
+  margin-top: 100px // DEV !!!!!!!!!!!!!!!!!!!!!!!!!!!
+  background: #f1f1f1
+  text-align: center
 
 .footer_logo
-	display: inline-block
-	float: left
-	& .footer_logo_svg
-		width: 102px
-		padding: 54px 51px
-		padding-left: 0
-	&:hover .footer_logo_svg
-		fill: #46c1ae
+  display: inline-block
+  float: left
+  & .footer_logo_svg
+    width: 102px
+    padding: 54px 51px
+    padding-left: 0
+  &:hover .footer_logo_svg
+    fill: #46c1ae
 
 .social
-	display: inline-block
-	list-style: none
-	margin: 0
-	margin-top: 55px
-	padding: 0
+  display: inline-block
+  list-style: none
+  margin: 0
+  margin-top: 55px
+  padding: 0
 
 .social_link
-	padding: 20px
-	&:hover .inst,
-	&:hover .fb,
-	&:hover .twitter
-		fill: #46c1ae
+  padding: 20px
+  &:hover .inst,
+  &:hover .fb,
+  &:hover .twitter
+    fill: #46c1ae
 
 .inst svg
-	width: 20px
+  width: 20px
 
 .fb svg
-	width: 15px
+  width: 15px
 
-.twitter svg 
-	width: 24px
+.twitter svg
+  width: 24px
 
 .social_item
-	display: inline-block
+  display: inline-block
 
 .design
-	position: relative
-	display: inline-block
-	float: right
+  position: relative
+  display: inline-block
+  float: right
 
 
 .design_text_link
-	display: inline-block
-	color: black
-	font-family: Verdana 
-	font-size: 18px
-	font-weight: 700
-	line-height: 18px
-	padding: 40px 0
-	text-decoration: none
+  display: inline-block
+  color: black
+  font-family: Verdana
+  font-size: 18px
+  font-weight: 700
+  line-height: 18px
+  padding: 40px 0
+  text-decoration: none
 
 .design_ic
-	display: inline-block
-	padding: 20px
-	padding-right: 0
-	vertical-align: middle
+  display: inline-block
+  padding: 20px
+  padding-right: 0
+  vertical-align: middle
 
 .design_ic
-	width: 20px
+  width: 20px
 
 .design_ic_style
-	fill: #63d1bb
+  fill: #63d1bb
 
 
 // PRESENTATION =====================
 .content_home
-	background: #f9f9f9
+  background: #f9f9f9
 
 .presentation
-	background: url("../img/content/hero-desktop.jpg") no-repeat
-	background-position: center top
+  background: url("../img/content/hero-desktop.jpg") no-repeat center center
 
 .presentation_title
-	max-width: 640px
-	color: #231f20
-	font-family: Verdana
-	font-size: 50px
-	font-weight: 700
-	line-height: 57px
-	text-align: center
-	margin: 0 auto
-	padding-top: 65px
-	margin-bottom: 33%
+  max-width: 640px
+  color: #231f20
+  font-family: Verdana
+  font-size: 50px
+  font-weight: 700
+  line-height: 57px
+  text-align: center
+  padding-top: 90px
+  margin: 0 auto
+  margin-bottom: 33%
 
 .categories
-	position: relative
-	font-size: 0
-	overflow: hidden
+  position: relative
+  font-size: 0
+  overflow: hidden
 
 .categories_wave
-	position: absolute
-	bottom: 0
-	left: 0
-	width: 100%
-	height: 33px
-	& svg
-		height: 34px
-		fill: #fff
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 33px
+  & svg
+    height: 34px
+    fill: #fff
 
 .category_item
-	position: relative
-	width: 50%
-	
+  position: relative
+  width: 50%
+
 .category_left
-	display: inline-block
-	float: left
-	background: #63d1bb
+  display: inline-block
+  float: left
+  background: #63d1bb
 
 .category_right
-	display: inline-block
-	float: right
-	text-align: left
-	background: #56c3b2
+  display: inline-block
+  float: right
+  text-align: left
+  background: #56c3b2
 
 .category_link
-	display: inline-block
-	width: 25%
-	text-decoration: none
-	color: white
-	font-family: Tahoma
-	font-size: 20px
-	font-weight: 700
-	line-height: 30px
-	padding: 30px 40px
-	padding-bottom: 46px
-	&:hover
-		opacity: .6
+  display: inline-block
+  width: 25%
+  text-decoration: none
+  color: white
+  font-family: Tahoma
+  font-size: 20px
+  font-weight: 700
+  line-height: 30px
+  padding: 25px 40px
+  padding-bottom: 46px
+  &:hover
+    opacity: .6
 
 .category_ic
-	position: absolute
-	top: 30px
-	right: 35px
-	opacity: .5
+  position: absolute
+  top: 30px
+  right: 35px
+  opacity: .5
 
 .category_ic_interior svg
-		width: 41px
-		& path
-			fill: #149080
+  width: 41px
+  & path
+    fill: #149080
 
 
 .category_ic_toys svg
-	width: 61px
-	& path
-		fill: #149080
+  width: 61px
+  & path
+    fill: #149080
 
 // PRESENTATION =====================
 
