@@ -87,7 +87,11 @@
   }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 685px) {
+  .tablet_catalog_link {
+    padding-right: 20px;
+  }
+
   .tablet_order_link {
     padding-right: 15px;
   }
