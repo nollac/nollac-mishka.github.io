@@ -322,6 +322,9 @@ html {
 .menu.active .menu_item {
   display: block;
   border-bottom: 1px solid #e7e7e7;
+}
+
+.menu.active .menu_link {
   padding: 32px 35px;
 }
 
@@ -443,7 +446,7 @@ footer {
 }
 
 .presentation {
-  background: url("../img/content/hero-desktop.jpg") no-repeat center 15px;
+  background: url("../img/content/hero-desktop.jpg") no-repeat center 20px;
 }
 
 .presentation_title {
