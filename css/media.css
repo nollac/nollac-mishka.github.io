@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1060px) {
+  .product {
+    background-size: 45%;
+  }
+}
+
 @media only screen and (max-width: 1025px) {
   .catalog_link {
     padding-right: 20px;
@@ -27,6 +33,10 @@
     padding: 44px 66px;
     background: url(../img/logo-tablet.svg) no-repeat;
     background-position-y: center;
+  }
+
+  .product {
+    background-size: 43%;
   }
 }
 
@@ -59,6 +69,16 @@
 
   .delivery {
     padding-left: 0;
+  }
+
+  .product {
+    background-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .week_item_text {
+    padding-right: 2.7em;
   }
 }
 
@@ -123,6 +143,10 @@
   .categories_wave svg {
     width: 746px;
     height: 24px;
+  }
+
+  .product {
+    background-size: 52%;
   }
 }
 

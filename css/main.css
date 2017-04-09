@@ -549,7 +549,7 @@ footer {
 .product {
   position: relative;
   background: url("../img/content/triple-set-desktop.jpg") no-repeat right top;
-  background-size: 50%;
+  background-size: 525px;
 }
 
 .week_item {
@@ -582,7 +582,7 @@ footer {
   font-size: 50px;
   font-weight: 700;
   line-height: 57px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .product_description {
@@ -592,7 +592,7 @@ footer {
   font-weight: 400;
   line-height: 30px;
   max-width: 260px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .product_characteristics {
@@ -605,7 +605,7 @@ footer {
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
-  padding: 12px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #cecece;
 }
 
