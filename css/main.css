@@ -547,6 +547,7 @@ footer {
 }
 
 .product {
+  position: relative;
   background: url("../img/content/triple-set-desktop.jpg") no-repeat right top;
   background-size: 50%;
 }
