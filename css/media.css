@@ -62,6 +62,44 @@
   }
 }
 
+@media only screen and (max-width: 860px) {
+  .content_home {
+    margin-bottom: 50px;
+  }
+
+  .product {
+    background-position: bottom right;
+  }
+
+  .week_item {
+    float: right;
+    margin-top: 20px;
+  }
+
+  .week_item_text {
+    padding-right: 1.9em;
+  }
+
+  .product_title {
+    margin-top: 0;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 50px;
+  }
+
+  .product_description {
+    margin-bottom: 30px;
+  }
+
+  .price {
+    padding: 40px 0 15px 0;
+  }
+
+  .to_order {
+    padding: 15px 100px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .presentation {
     background-position: center top;
