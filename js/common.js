@@ -9,3 +9,11 @@ trigger.addEventListener('click', function() {
   };
   active_menu.classList.toggle('active');
 });
+
+$(document).ready(function(){
+    $('.bxslider').bxSlider({
+        auto: true,
+        slideMargin: 400,
+        arrow: true
+    });
+});
