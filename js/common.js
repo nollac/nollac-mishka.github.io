@@ -12,8 +12,8 @@ trigger.addEventListener('click', function() {
 
 $(document).ready(function(){
     $('.bxslider').bxSlider({
-        auto: true,
-        slideMargin: 400,
-        arrow: true
+        // auto: true,
+        mode: 'fade',
+        slideMargin: 400
     });
 });

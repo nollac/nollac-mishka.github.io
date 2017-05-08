@@ -631,6 +631,13 @@ footer {
   background: none;
   padding: 18px 105px;
   cursor: pointer;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+}
+
+.to_order:hover {
+  color: #63d1bb;
+  border-color: #63d1bb;
 }
 
 .product_line {
@@ -746,12 +753,20 @@ footer {
   text-transform: uppercase;
   padding: 17px 40px;
   margin-top: 85px;
+  cursor: pointer;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+}
+
+.review_button:hover {
+  color: #63d1bb;
+  border-color: #63d1bb;
 }
 
 .review_list {
   list-style: none;
   padding: 0;
-  margin: 0 0 0 175px !important;
+  margin: 0 0 0 175px;
 }
 
 .review_item {
@@ -773,7 +788,7 @@ footer {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  margin: 0;
+  margin: 0 0 105px 0;
 }
 
 .author_nickname {
@@ -787,4 +802,46 @@ footer {
 
 .bx-wrapper {
   border: none;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.bx-wrapper .bx-pager {
+  display: none;
+}
+
+.bx-viewport {
+  height: 200px;
+}
+
+.bx-wrapper .bx-prev {
+  background: url("../img/sliderArrow.svg") no-repeat center;
+  left: 86.6%;
+}
+
+.bx-wrapper .bx-next {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  background: url("../img/sliderArrow.svg") no-repeat center;
+  right: 20px;
+}
+
+.bx-prev,
+.bx-next {
+  font-size: 0;
+}
+
+.bx-wrapper .bx-prev:focus,
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-next:focus,
+.bx-wrapper .bx-next:hover {
+  background-position: center;
+  opacity: .7;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  width: 50px;
+  height: 26px;
 }
