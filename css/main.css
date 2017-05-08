@@ -370,6 +370,9 @@ footer {
   width: 102px;
   padding: 54px 51px;
   padding-left: 0;
+  fill: #000000;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
 }
 
 .footer_logo:hover .footer_logo_svg {
@@ -392,6 +395,8 @@ footer {
 .social_link:hover .fb,
 .social_link:hover .twitter {
   fill: #46c1ae;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
 }
 
 .inst svg {
@@ -512,6 +517,8 @@ footer {
   line-height: 30px;
   padding: 25px 40px;
   padding-bottom: 46px;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
 }
 
 .category_link:hover {
