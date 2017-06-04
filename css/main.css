@@ -824,7 +824,8 @@ footer {
 
 .bx-wrapper .bx-prev {
   background: url("../img/sliderArrow.svg") no-repeat center;
-  left: 86.6%;
+  left: auto;
+  right: 100px;
 }
 
 .bx-wrapper .bx-next {
