@@ -853,3 +853,23 @@ footer {
   width: 50px;
   height: 26px;
 }
+
+.contacts_info,
+.contacts_map {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.contacts_map {
+  float: right;
+}
+
+.map_wrapper {
+  max-width: 525px;
+  width: 100%;
+}
+
+.google_map {
+  width: 100%;
+}
