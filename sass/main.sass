@@ -267,7 +267,6 @@ html
 // FOOTER
 
 footer
-	margin-top: 100px //DEV !!!!!!!!!!!!!
 	background: #f1f1f1
 	text-align: center
 
@@ -679,6 +678,9 @@ footer
 	width: 50px
 	height: 26px
 
+.contacts
+	margin-bottom: 105px
+
 .contacts_info,
 .contacts_map
 	display: inline-block
@@ -692,6 +694,7 @@ footer
 	float: right
 
 .contacts_address
+	position: relative
 	display: inline-block
 	width: 285px
 
@@ -704,20 +707,46 @@ footer
 		fill: #62d1ba
 
 .contacts_address_title
-	margin: 0 0 65px 0
-	padding-top: 20px
+	margin: 0 0 55px 0
+	padding-top: 10px
 	color: black
 	font-family: Verdana
 	font-size: 50px
 	font-weight: 700
-	line-height: 57px
+	line-height: 1
+
+.mail,
+.address,
+.mail_link
+	color: #444
+	font-family: OpenSans
+	font-size: 16px
+	font-weight: 400
+	line-height: 30px
+	text-decoration: none
+
+.mail_link
+	transition: all ease .4s
+	&:hover
+		color: #62d1ba
+
+.address
+	margin-bottom: 60px
+
+.mail_link
+	padding-bottom: 7px
+	border-bottom: 1px solid #62d1ba
 
 .mail
-	margin-bottom: 50px
+	margin-bottom: 30px
 
 .mail_text,
 .address_text
 	margin-right: 30px
+
+.address_text
+	display: block
+	float: left
 
 .address_city
 	display: inline-block
@@ -725,6 +754,23 @@ footer
 
 .mail_button
 	display: block
+	position: relative
+	left: 50%
+	transform: translateX(-54%)
+	border: 2px solid #444
+	background: #fff
+	color: #444
+	font-family: OpenSans
+	font-size: 16px
+	font-weight: 700
+	line-height: 16px
+	text-transform: uppercase
+	padding: 20px 45px
+	cursor: pointer
+	transition: all ease .4s
+	&:hover
+		color: #63d1bb
+		border-color: #63d1bb
 
 // MAP
 
