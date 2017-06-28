@@ -30,12 +30,6 @@
   }
 }
 
-@media only screen and (max-width: 955px) {
-  .container {
-    padding: 0 25px;
-  }
-}
-
 @media only screen and (max-width: 910px) {
   .container {
     padding: 0 50px;
@@ -62,9 +56,10 @@
   }
 }
 
-@media only screen and (max-width: 875px) {
-  .week_item_text {
-    padding-right: 2.7em;
+@media only screen and (max-width: 880px) {
+  .review_header,
+  .review_list {
+    margin-left: 135px;
   }
 }
 
@@ -107,7 +102,19 @@
   }
 }
 
+@media only screen and (max-width: 840px) {
+  .review_header,
+  .review_list {
+    margin-left: 65px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .product {
+    background-size: 320px;
+    background-position: bottom right;
+  }
+
   .presentation {
     background-position: center top;
   }
@@ -129,6 +136,20 @@
   .categories_wave svg {
     width: 746px;
     height: 24px;
+  }
+
+  .review_header {
+    margin-left: 0;
+    padding: 0 50px;
+  }
+
+  .review .container {
+    padding: 0;
+  }
+
+  .review_list {
+    margin: 0;
+    padding: 0 50px;
   }
 }
 
