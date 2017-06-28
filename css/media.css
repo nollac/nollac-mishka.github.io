@@ -16,7 +16,7 @@
   }
 }
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1000px) {
   .logo {
     left: -webkit-calc(50% - 66px);
     left: calc(50% - 66px);
@@ -27,6 +27,60 @@
     padding: 44px 66px;
     background: url(../img/logo-tablet.svg) no-repeat;
     background-position-y: center;
+  }
+
+  .contacts .container {
+    padding: 0;
+  }
+
+  .contacts_info {
+    display: block;
+    float: none;
+    padding: 0 50px;
+    width: 75%;
+  }
+
+  .contacts_flag {
+    float: none;
+    position: absolute;
+    right: 0;
+  }
+
+  .contacts_address {
+    width: 100%;
+  }
+
+  .mail,
+  .address {
+    display: inline-block;
+    float: left;
+  }
+
+  .address {
+    float: right;
+  }
+
+  .mail {
+    vertical-align: top;
+  }
+
+  .mail_button {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .contacts_map {
+    width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .map_wrapper {
+    max-width: 100%;
+  }
+
+  .mail_button {
+    left: 50%;
   }
 }
 
