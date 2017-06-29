@@ -227,9 +227,9 @@ html
 .menu.active
 	position: absolute
 	top: 89px
-	right: calc(50% - 130px)
+	right: calc(50% - 160px)
 	display: block
-	width: 260px
+	width: 320px
 	background: #fff
 	z-index: 10
 	& .item_wrapper_left
@@ -245,7 +245,7 @@ html
 		border-bottom: 1px solid #e7e7e7
 
 	& .menu_link
-		padding: 32px 35px
+		padding: 32px 75px
 
 	& .catalog_link
 		padding-right: 72px
@@ -260,8 +260,11 @@ html
 	& .search_link
 		padding-right: 84px
 
+	& .basket_link
+		padding-right: 55px
+
 	& .search_link svg, .basket_link svg
-		left: 0
+		left: 30px
 
 	& .search_link_text
 		display: inline-block
@@ -582,6 +585,7 @@ footer
 
 .review_header
 	margin-left: 175px
+	display: inline-block
 
 .review_title
 	float: left
@@ -654,6 +658,9 @@ footer
 
 .bx-viewport
 	height: 200px
+
+.bx-controls.bx-has-controls-direction.bx-has-pager
+	position: relative
 
 .bx-wrapper .bx-prev
 	background: url("../img/sliderArrow.svg") no-repeat center
