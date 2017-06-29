@@ -60,6 +60,8 @@ html {
   line-height: 24px;
   padding: 32px 35px;
   text-decoration: none;
+  -webkit-transition: opacity ease .2s;
+  transition: opacity ease .2s;
 }
 
 .menu_link:hover,
@@ -82,6 +84,8 @@ html {
   left: calc(50% - 75px);
   position: absolute;
   z-index: 10;
+  -webkit-transition: opacity ease .2s;
+  transition: opacity ease .2s;
 }
 
 .logo:hover {
@@ -116,6 +120,8 @@ html {
   width: 18px;
   height: 19px;
   opacity: .2;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
 }
 
 .search_link:hover svg {
@@ -149,6 +155,8 @@ html {
   height: 19px;
   fill: #63d1bb;
   opacity: .2;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
 }
 
 .basket_link:hover {
@@ -824,7 +832,7 @@ footer {
 .bx-wrapper .bx-prev {
   background: url("../img/sliderArrow.svg") no-repeat center;
   left: auto;
-  right: 100px;
+  right: 105px;
 }
 
 .bx-wrapper .bx-next {

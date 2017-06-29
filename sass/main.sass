@@ -52,6 +52,7 @@ html
 	line-height: 24px
 	padding: 32px 35px
 	text-decoration: none
+	transition: opacity ease .2s
 	&:hover
 		opacity: .6
 
@@ -67,6 +68,7 @@ html
 	left: calc(50% - 75px)
 	position: absolute
 	z-index: 10
+	transition: opacity ease .2s
 	&:hover
 		opacity: .6
 
@@ -92,6 +94,7 @@ html
 		width: 18px
 		height: 19px
 		opacity: .2
+		transition: all ease .2s
 	&:hover svg
 		opacity: 1
 	& .search_link_svg
@@ -115,6 +118,7 @@ html
 		height: 19px
 		fill: #63d1bb
 		opacity: .2
+		transition: all ease .2s
 	&:hover
 		opacity: 1
 		& p
@@ -654,7 +658,7 @@ footer
 .bx-wrapper .bx-prev
 	background: url("../img/sliderArrow.svg") no-repeat center
 	left: auto
-	right: 100px
+	right: 105px
 
 .bx-wrapper .bx-next
 	-webkit-transform: rotate(180deg)

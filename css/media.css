@@ -205,6 +205,14 @@
     margin: 0;
     padding: 0 50px;
   }
+
+  .bx-wrapper .bx-prev {
+    right: 155px;
+  }
+
+  .bx-wrapper .bx-next {
+    right: 70px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
