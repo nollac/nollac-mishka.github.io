@@ -18,7 +18,7 @@ html
 		background: #e7e7e7
 
 .container
-	max-width: 1150px
+	max-width: 1050px
 	margin: 0 auto
 	padding: 0 50px
 
@@ -328,17 +328,16 @@ footer
 	font-size: 18px
 	font-weight: 700
 	line-height: 18px
-	padding: 40px 0
+	padding: 30px 0
 	text-decoration: none
 
 .design_ic
 	display: inline-block
-	padding: 20px
-	padding-right: 0
+	padding: 25px 0 25px 25px
 	vertical-align: middle
 
 .design_ic
-	width: 20px
+	width: 25px
 
 .design_ic_style
 	fill: #63d1bb
@@ -347,7 +346,7 @@ footer
 
 .content_home
 	background: #f9f9f9
-	margin-bottom: 70px
+	margin-bottom: 65px
 
 .presentation
 	background: url("../img/content/hero-desktop.jpg") no-repeat center 20px
@@ -362,7 +361,7 @@ footer
 	text-align: center
 	padding-top: 90px
 	margin: 0 auto
-	margin-bottom: 370px
+	margin-bottom: 360px
 
 .categories
 	position: relative
@@ -439,7 +438,7 @@ footer
 
 .week_item
 	display: inline-block
-	margin-top: 55px
+	margin-top: 70px
 	vertical-align: top
 
 .week_item_text
@@ -460,11 +459,11 @@ footer
 
 .product_title
 	color: black
-	font-family: Verdana
+	font-family: Verdana Bold, sans-serif
 	font-size: 50px
 	font-weight: 700
 	line-height: 57px
-	margin-bottom: 50px
+	margin: 50px 0
 
 .product_description
 	color: #444
@@ -473,10 +472,11 @@ footer
 	font-weight: 400
 	line-height: 1.7
 	max-width: 260px
-	margin-bottom: 50px
+	margin-bottom: 65px
 
 .product_characteristics
 	width: 280px
+	margin-bottom: 110px
 
 	& td
 		color: #444
@@ -495,7 +495,7 @@ footer
 	font-weight: 700
 	line-height: 24px
 	text-align: center
-	padding: 80px 0 29px 0
+	margin: 0 0 35px 0
 
 .to_order
 	color: #444
@@ -514,7 +514,7 @@ footer
 		border-color: #63d1bb
 
 .border_line
-	margin-bottom: 70px
+	margin-bottom: 55px
 	& svg
 		fill: #f1f1f1
 
@@ -527,15 +527,16 @@ footer
 .about_us_title
 	color: black
 	font-family: Verdana
-	font-size: 40px
+	font-size: 50px
 	font-weight: 700
-	line-height: 50px
+	line-height: 1
 	margin-bottom: 60px
 
 .about_us_list
 	display: inline-block
 	list-style: none
 	padding: 0
+	margin: 0
 
 .about_us_item
 	position: relative
@@ -543,14 +544,20 @@ footer
 	font-family: Verdana
 	font-size: 20px
 	font-weight: 700
-	padding-top: 55px
-	padding-bottom: 60px
+	padding-top: 50px
+	padding-bottom: 50px
 	max-width: 321px
 	& svg
 		position: absolute
 		top: 0
 		left: 0
 		fill: #63d1bb
+
+	&.support, &.style
+		padding-top: 55px
+
+	&.gifts, &.likes
+		padding-top: 60px
 
 .list_left
 	float: left
@@ -559,6 +566,7 @@ footer
 
 .list_right
 	float: right
+	margin-right: 25px
 
 .materials svg
 	width: 33px
@@ -581,7 +589,7 @@ footer
 // REVIEW
 
 .review_wrapper
-	background: url(../img/content/review-pic.jpg) no-repeat top left
+	background: url(../img/content/review-pic.jpg) no-repeat bottom left
 
 .review_header
 	margin-left: 175px
@@ -595,7 +603,7 @@ footer
 	font-size: 50px
 	font-weight: 700
 	line-height: 1
-	margin: 80px 0 35px 0
+	margin: 110px 0 35px 0
 
 .review_button
 	float: right
@@ -608,7 +616,7 @@ footer
 	line-height: 16px
 	text-transform: uppercase
 	padding: 17px 40px
-	margin-top: 85px
+	margin-top: 115px
 	cursor: pointer
 	transition: all ease .4s
 	&:hover
@@ -621,11 +629,11 @@ footer
 	margin: 0 0 0 175px
 
 .review_item
-	max-width: 615px
+	max-width: 665px
 
 .review_item_text
 	color: #444
-	font-family: OpenSans
+	font-family: OpenSans Regular, sans-serif
 	font-size: 16px
 	font-weight: 400
 	line-height: 30px
@@ -658,9 +666,12 @@ footer
 
 .bx-viewport
 	height: 200px
+	position: relative
 
 .bx-controls.bx-has-controls-direction.bx-has-pager
-	position: relative
+	position: absolute
+	top: 175px
+	right: 0
 
 .bx-wrapper .bx-prev
 	background: url("../img/sliderArrow.svg") no-repeat center
@@ -696,10 +707,11 @@ footer
 .contacts_map
 	display: inline-block
 	float: left
-	width: 50%
+	width: 49%
 
 .contacts_info
-	margin-top: 65px
+	margin-top: 70px
+	margin-left: 20px
 
 .contacts_map
 	float: right
@@ -731,10 +743,10 @@ footer
 .address,
 .mail_link
 	color: #444
-	font-family: OpenSans
+	font-family: OpenSans Regular, sans-serif
 	font-size: 16px
 	font-weight: 400
-	line-height: 30px
+	line-height: 1.9
 	text-decoration: none
 
 .mail_link
@@ -743,7 +755,7 @@ footer
 		color: #62d1ba
 
 .address
-	margin-bottom: 60px
+	margin-bottom: 80px
 
 .mail_link
 	padding-bottom: 7px
@@ -762,13 +774,13 @@ footer
 
 .address_city
 	display: inline-block
-	width: 180px
+	width: 200px
 
 .mail_button
 	display: block
 	position: relative
 	left: 280px
-	transform: translateX(-54%)
+	transform: translateX(-45%)
 	border: 2px solid #444
 	background: #fff
 	color: #444
@@ -777,7 +789,7 @@ footer
 	font-weight: 700
 	line-height: 16px
 	text-transform: uppercase
-	padding: 20px 45px
+	padding: 15px 45px
 	cursor: pointer
 	transition: all ease .4s
 	&:hover
