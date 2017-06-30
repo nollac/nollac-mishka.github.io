@@ -106,7 +106,7 @@
 		margin-bottom: 50px
 
 	.product_description
-		margin-bottom: 30px
+		margin-bottom: 45px
 
 	.price
 		padding: 40px 0 15px 0
@@ -120,16 +120,25 @@
 		margin-left: 65px
 
 @media only screen and (max-width: 768px)
+
+	.content_home
+		margin-bottom: 35px
+
 	.product
 		-webkit-background-size: 320px
 		background-size: 320px
 		background-position: bottom right
+
+	.product_home
+		margin-bottom: 50px
+
 	.presentation
 		background-position: center top
 
 	.presentation_title
 		font-size: 40px
 		line-height: 50px
+		margin-bottom: 375px
 	.category_link
 		padding: 25px 40px 45px 40px
 
@@ -140,12 +149,18 @@
 			width: 746px
 			height: 24px
 
+	.product_characteristics
+		margin-bottom: 25px
+
+	.price
+		padding-bottom: 0
+
+	.about_us_title
+		font-size: 40px
+
 	.review_header
 		margin-left: 0
 		padding: 0 50px
-
-	.review_button
-		margin-right: 50px
 
 	.review .container
 		padding: 0
@@ -154,11 +169,34 @@
 		margin: 0
 		padding: 0 50px
 
+	.review_title
+		margin-top: 105px
+		font-size: 40px
+
 	.bx-wrapper .bx-prev
 		right: 155px
 
 	.bx-wrapper .bx-next
 		right: 70px
+
+	.contacts
+		margin-bottom: 60px
+
+	.contacts_info
+		margin-left: 0
+		width: 80%
+
+	.contacts_flag
+		right: -15px
+		top: -20px
+
+	.contacts_address_title
+		font-size: 40px
+		padding-top: 0
+
+	.address
+		margin-bottom: 55px
+
 
 @media only screen and (max-width: 700px)
 	.about_us_item
@@ -290,10 +328,17 @@
 		background: none
 
 	.review_button
-		display: none
+		top: auto
+		bottom: -170px
+		right: 50%
+		transform: translateX(+50%)
+		padding: 17px 90px
 
 	.review_item
 		max-width: 460px
+
+	.bx-wrapper
+		margin-bottom: 205px
 
 	.bx-wrapper .bx-controls-direction a
 		top: auto
@@ -306,11 +351,13 @@
 	.bx-controls-direction
 		width: 240px
 		position: absolute
+		left: 50%
+		transform: translateX(-50%)
 
 	.bx-controls.bx-has-controls-direction.bx-has-pager
 		position: absolute
 		top: auto
-		bottom: 0
+		bottom: -75px
 		right: 0
 		left: 50%
 		transform: translateX(-50%)

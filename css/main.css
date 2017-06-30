@@ -754,6 +754,7 @@ footer {
 
 .review_wrapper {
   background: url(../img/content/review-pic.jpg) no-repeat bottom left;
+  position: relative;
 }
 
 .review_header {
@@ -773,7 +774,9 @@ footer {
 }
 
 .review_button {
-  float: right;
+  position: absolute;
+  top: -40px;
+  right: 0;
   background: none;
   border: 2px solid #444;
   color: #444;
@@ -819,7 +822,7 @@ footer {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  margin: 0 0 105px 0;
+  margin: 0;
 }
 
 .author_nickname {
@@ -897,6 +900,7 @@ footer {
 }
 
 .contacts_info {
+  position: relative;
   margin-top: 70px;
   margin-left: 20px;
 }
