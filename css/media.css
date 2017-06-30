@@ -274,7 +274,7 @@
   }
 }
 
-@media only screen and (max-width: 685px) {
+@media only screen and (max-width: 695px) {
   .tablet_catalog_link {
     padding-right: 20px;
   }
@@ -531,6 +531,27 @@
   }
 }
 
+@media only screen and (max-width: 415px) {
+  .address_city {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mail,
+  .mail_link,
+  .address {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .mail_text,
+  .address_text {
+    margin-right: 20px;
+  }
+}
+
 @media only screen and (max-width: 350px) {
   .presentation_title {
     margin-bottom: 195px;
@@ -538,6 +559,11 @@
 
   .review_item {
     max-width: 260px;
+  }
+
+  .mail_text,
+  .address_text {
+    margin-right: 10px;
   }
 }
 
