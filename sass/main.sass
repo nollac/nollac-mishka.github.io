@@ -815,12 +815,15 @@ footer
 
 /* ----- CATALOG PAGE ----- */
 
+.catalog_title_wrapper
+	position: relative
+
 .content_catalog .second_menu,
-.substrate
+.catalog_title_wrapper
 	background: #f1f1f1
 
 .catalog_title
-	margin: 0 auto
+	padding-top: 30px
 
 .catalog_title_text
 	display: inline-block
@@ -828,9 +831,19 @@ footer
 	left: 50%
 	transform: translateX(-50%)
 	margin: 0
+	padding-bottom: 120px
 	color: #231f20
 	font-family: Verdana Bold
-	font-size: 24px
+	font-size: 50px
 	font-weight: 700
-	line-height: 30px
+	line-height: 1.2
 
+.zig_zag_line
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 34px
+	background: url(../img/zig_zag_white_line.svg) center top
+	-webkit-background-size:
+	background-size: 110%
