@@ -1,4 +1,54 @@
 
+
+@media only screen and (max-width: 1105px)
+	.video
+		margin-right: 40px
+
+@media only screen and (max-width: 1075px)
+	.catalog_item
+		&.left,
+		&.right
+			float: none
+		&.right
+			margin-top: 20px
+
+	.video
+		width: 100%
+		margin-bottom: 20px
+	.video_img
+		max-width: 100%
+
+		& img
+			border-bottom: 1px solid #ececec
+
+	.video_descr
+		display: inline-block
+		float: none
+		position: relative
+		left: 50%
+		transform: translateX(-50%)
+		margin-top: 0
+
+	.video_descr_icon
+		position: absolute
+		top: 0
+		left: 0
+
+	.video_text
+		margin: 0 10px 35px 10px
+
+	.video_text_descr
+		max-width: 580px
+
+	.video_text_title
+		margin-left: 65px
+
+	.video_descr_btn
+		max-width: 585px
+		width: 95.3%
+		margin: 0 10px 45px 10px
+
+
 @media only screen and (max-width: 1025px)
 	.catalog_link
 		padding-right: 20px
@@ -60,8 +110,8 @@
 		left: 50%
 
 @media only screen and (max-width: 910px)
-	.container
-		padding: 0 50px
+	//.container
+	//	padding: 0 50px
 	.item_wrapper_left
 		display: none
 
@@ -197,6 +247,51 @@
 	.address
 		margin-bottom: 55px
 
+
+	.catalog_item
+		display: block
+		margin: 55px 0 0 0
+		&:first-child
+			margin-top: 0
+		&.left,
+		&.right
+			float: none
+
+	.product_item
+		width: 100%
+		height: 334px
+		overflow: hidden
+		&_img
+			height: 335px
+
+		& .img_rabbit
+			background: url("../img/content/catalog_content/photo-1-tablet.jpg") no-repeat center top
+		& .img_basket
+			background: url("../img/content/catalog_content/photo-2-tablet.jpg") no-repeat center top
+
+		& .img_toy
+			background: url("../img/content/catalog_content/photo-3-tablet.jpg") no-repeat center top
+
+
+	.item_text
+		float: right
+		margin-right: 30px
+
+	.text_rabbit .item_descr,
+	.text_basket .item_descr
+		margin-bottom: 182px
+
+
+	.text_toy .item_descr
+		margin-bottom: 147px
+
+	.item_price_icon
+		bottom: 20px
+
+	.video
+		width: 100%
+		float: none
+		margin-right: 0
 
 @media only screen and (max-width: 700px)
 	.about_us_item

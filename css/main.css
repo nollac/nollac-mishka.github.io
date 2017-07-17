@@ -1116,8 +1116,8 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 34px;
-  background: url(../img/zig_zag_white_line.svg) center top;
+  height: 6vh;
+  background: url(../img/zig_zag_white_line.svg) no-repeat center bottom;
   background-size: 110%;
 }
 
@@ -1125,6 +1125,7 @@ footer {
   display: inline-block;
   vertical-align: top;
   text-align: left;
+  margin-right: 10px;
 }
 
 .catalog_item.left {
@@ -1133,6 +1134,7 @@ footer {
 
 .catalog_item.right {
   float: right;
+  margin-right: 0;
 }
 
 .product_item {
@@ -1142,6 +1144,24 @@ footer {
   text-decoration: none;
   -webkit-transition: all ease .4s;
   transition: all ease .4s;
+}
+
+.product_item_img {
+  display: inline-block;
+  width: 316px;
+  height: 460px;
+}
+
+.product_item .img_rabbit {
+  background: url("../img/content/catalog_content/photo-1.jpg") no-repeat center top;
+}
+
+.product_item .img_basket {
+  background: url("../img/content/catalog_content/photo-2.jpg") no-repeat center top;
+}
+
+.product_item .img_toy {
+  background: url("../img/content/catalog_content/photo-3.jpg") no-repeat center top;
 }
 
 .product_item:hover {
@@ -1167,6 +1187,11 @@ footer {
   width: 256px;
 }
 
+.text_rabbit .item_descr,
+.text_basket .item_descr {
+  margin-bottom: 50px;
+}
+
 .item_name {
   color: black;
   font-family: Verdana Bold, sans-serif;
@@ -1186,8 +1211,6 @@ footer {
   font-weight: 400;
   line-height: 30px;
   margin: 0;
-  padding-bottom: 35px;
-  border-bottom: 1px solid #ececec;
 }
 
 .item_descr.more_text {
@@ -1200,6 +1223,8 @@ footer {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  padding-top: 15px;
+  border-top: 1px solid #ececec;
   opacity: 1;
   -webkit-transition: all ease .4s;
   transition: all ease .4s;
@@ -1207,7 +1232,7 @@ footer {
 
 .item_price_icon {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   right: 0;
   width: 21px;
   opacity: .2;
@@ -1221,6 +1246,7 @@ footer {
 }
 
 .video_item {
+  position: relative;
   border: 1px solid #ececec;
   font-size: 0;
 }
@@ -1300,6 +1326,7 @@ footer {
 }
 
 .video_text {
+  position: relative;
   margin-bottom: 45px;
 }
 
