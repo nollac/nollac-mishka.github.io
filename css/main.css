@@ -52,6 +52,10 @@ html {
   clear: both;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .header {
   position: relative;
 }
@@ -67,6 +71,7 @@ html {
 }
 
 .container {
+  position: relative;
   max-width: 1050px;
   margin: 0 auto;
   padding: 0 50px;
