@@ -689,6 +689,10 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  .video_descr_btn {
+    margin-left: 8px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -709,7 +713,7 @@
   }
 
   .video_img {
-    margin-top: 100px;
+    margin-top: 95px;
   }
 
   .video_descr {
@@ -721,11 +725,12 @@
 
   .video_text_title {
     position: absolute;
-    top: 0;
+    top: 8px;
     left: -webkit-calc(50% - 135px);
     left: calc(50% - 135px);
-    width: 200px;
+    width: 180px;
     padding-bottom: 20px;
+    font-size: 16px;
   }
 
   .video_descr_icon {
