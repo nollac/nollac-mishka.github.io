@@ -1317,22 +1317,19 @@ footer {
 
 .video_descr {
   float: left;
-  margin-top: 50px;
-}
-
-.video_descr_icon {
-  width: 32px;
-  height: 22px;
-  margin-bottom: 30px;
-}
-
-.video_descr_icon svg {
-  fill: #63d1bb;
+  margin-top: 30px;
 }
 
 .video_text {
   position: relative;
   margin-bottom: 45px;
+}
+
+.video_descr_icon {
+  height: 22px;
+  background: url("../img/video-ic.svg") no-repeat;
+  background-size: 32px;
+  padding-top: 45px;
 }
 
 .video_text_title {

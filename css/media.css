@@ -39,9 +39,7 @@
   }
 
   .video_descr_icon {
-    position: absolute;
-    top: 0;
-    left: 0;
+    padding: 0 0 0 65px;
   }
 
   .video_text {
@@ -53,7 +51,7 @@
   }
 
   .video_text_title {
-    margin-left: 65px;
+    margin-left: 10px;
   }
 
   .video_descr_btn {
@@ -708,6 +706,30 @@
 
   .review_item {
     max-width: 300px;
+  }
+
+  .video_img {
+    margin-top: 100px;
+  }
+
+  .video_descr {
+    position: static;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .video_text_title {
+    position: absolute;
+    top: 0;
+    left: -webkit-calc(50% - 135px);
+    left: calc(50% - 135px);
+    width: 200px;
+    padding-bottom: 20px;
+  }
+
+  .video_descr_icon {
+    background-position: 0 10px;
   }
 }
 
