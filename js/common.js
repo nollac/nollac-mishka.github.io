@@ -1,7 +1,8 @@
-var trigger 	= document.querySelector('.trigger')
-var active_menu = document.querySelector('.menu')
+var trigger 	= document.querySelector('.trigger');
+var active_menu = document.querySelector('.menu');
 
-trigger.addEventListener('click', function() {
+trigger.addEventListener('click', function(e) {
+    e.preventDefault();
   if (trigger.classList.contains('trigger_show')) {
     trigger.classList.remove('trigger_show');
   } else {
@@ -12,7 +13,7 @@ trigger.addEventListener('click', function() {
 
 $(document).ready(function(){
     $('.bxslider').bxSlider({
-        // auto: true,
+        auto: true,
         mode: 'fade',
         slideMargin: 400
     });

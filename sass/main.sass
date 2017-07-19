@@ -234,12 +234,13 @@ html
 	transform: rotate3d(0, 0, 1, -45deg)
 
 .menu.active
-	position: absolute
-	top: 89px
-	right: calc(50% - 160px)
+	position: relative
+	top: 0
+	right: 50%
 	display: block
-	width: 320px
+	width: 100%
 	background: #fff
+	transform: translateX(50%)
 	z-index: 10
 	& .item_wrapper_left
 		display: block
@@ -255,22 +256,11 @@ html
 
 	& .menu_link
 		padding: 32px 75px
-
-	& .catalog_link
-		padding-right: 72px
-
-	& .order_link
-		padding-right: 64px
+		padding-right: 50%
 
 	& .search, .catalog
 		border-right: none
 		border-left: none
-
-	& .search_link
-		padding-right: 84px
-
-	& .basket_link
-		padding-right: 55px
 
 	& .search_link svg, .basket_link svg
 		left: 30px

@@ -360,13 +360,15 @@ html {
 }
 
 .menu.active {
-  position: absolute;
-  top: 89px;
-  right: -webkit-calc(50% - 160px);
-  right: calc(50% - 160px);
+  position: relative;
+  top: 0;
+  right: 50%;
   display: block;
-  width: 320px;
+  width: 100%;
   background: #fff;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
   z-index: 10;
 }
 
@@ -387,28 +389,13 @@ html {
 
 .menu.active .menu_link {
   padding: 32px 75px;
-}
-
-.menu.active .catalog_link {
-  padding-right: 72px;
-}
-
-.menu.active .order_link {
-  padding-right: 64px;
+  padding-right: 50%;
 }
 
 .menu.active .search,
 .menu.active .catalog {
   border-right: none;
   border-left: none;
-}
-
-.menu.active .search_link {
-  padding-right: 84px;
-}
-
-.menu.active .basket_link {
-  padding-right: 55px;
 }
 
 .menu.active .search_link svg,
