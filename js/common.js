@@ -1,5 +1,5 @@
-var trigger 	= document.querySelector('.trigger');
-var active_menu = document.querySelector('.menu');
+var trigger 	      = document.querySelector('.trigger');
+var active_menu       = document.querySelector('.menu');
 
 trigger.addEventListener('click', function(e) {
     e.preventDefault();
