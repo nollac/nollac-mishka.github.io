@@ -218,7 +218,7 @@
 		padding: 0 50px
 
 	.review_title
-		margin-top: 105px
+		margin-top: 5px
 		font-size: 40px
 
 	.bx-wrapper .bx-prev
@@ -226,6 +226,9 @@
 
 	.bx-wrapper .bx-next
 		right: 70px
+
+	.review_button
+		right: 50px
 
 	.contacts
 		margin-bottom: 60px
@@ -370,16 +373,20 @@
 		float: left
 
 @media only screen and (max-width: 650px)
+
 	.navigation
 		padding-top: 89px
-
 
 	.menu,
 	.second_menu_list
 		display: none
+
 	.trigger
 		display: block
 		z-index: 100
+
+	.menu.active .menu_link
+		padding-right: 40%
 
 	.search_link .search_link_ic
 		padding: 0
@@ -457,12 +464,15 @@
 	.categories_wave
 		display: none
 
+	.review
+		margin-bottom: 60px
+
 	.review_wrapper
 		background: none
 
 	.review_button
 		top: auto
-		bottom: -170px
+		bottom: -20px
 		right: 50%
 		transform: translateX(+50%)
 		padding: 17px 90px
@@ -470,8 +480,14 @@
 	.review_item
 		max-width: 460px
 
-	.bx-wrapper
-		margin-bottom: 205px
+	.review_header
+		margin-top: 15px
+
+	.review_title
+		margin-bottom: 10px
+
+	.review_item_text
+		margin-bottom: 20px
 
 	.bx-wrapper .bx-controls-direction a
 		top: auto
@@ -490,7 +506,7 @@
 	.bx-controls.bx-has-controls-direction.bx-has-pager
 		position: absolute
 		top: auto
-		bottom: -75px
+		bottom: -85px
 		right: 0
 		left: 50%
 		transform: translateX(-50%)
@@ -502,14 +518,29 @@
 	.bx-wrapper .bx-next
 		right: 0
 
+@media only screen and (max-width: 545px)
+
+	.menu.active .menu_link
+		padding-right: 30%
+
 @media only screen and (max-width: 510px)
 	.presentation_title
 		margin-bottom: 230px
 
+	.review
+		margin-bottom: 85px
+
 	.review_item
 		max-width: 380px
 
+	.review_button
+		bottom: -45px
+
 @media only screen and (max-width: 480px)
+
+	.menu.active .menu_link
+		padding-right: 15%
+
 	.catalog_title_text
 		font-size: 24px
 
@@ -530,6 +561,13 @@
 		margin-left: 8px
 
 @media only screen and (max-width: 425px)
+
+	.review
+		margin-bottom: 140px
+
+	.review_button
+		bottom: -100px
+
 	.container
 		padding: 0 25px
 
@@ -578,6 +616,10 @@
 
 
 @media only screen and (max-width: 350px)
+
+	.review_button
+		margin-bottom: -45px
+
 	.presentation_title
 		margin-bottom: 195px
 
@@ -599,6 +641,11 @@
 
 	.logo_pic
 		padding: 44px 43px
+		padding: 44px 43px
+
+	.menu.active .menu_link
+		padding-right: 0
+		padding-left: 50px
 
 	.presentation_title
 		margin-bottom: 115px
