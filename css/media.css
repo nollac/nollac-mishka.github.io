@@ -408,9 +408,17 @@
     background-position: left top;
   }
 
-  .text_rabbit .item_descr,
-  .text_basket .item_descr,
-  .text_toy .item_descr {
+  .product_item .img_basket {
+    background-size: 83%;
+    background-position: 0 -35px;
+  }
+
+  .product_item .img_toy {
+    background-size: 85%;
+    background-position: -5px 0;
+  }
+
+  .item_text .item_descr {
     margin-bottom: 0;
   }
 

@@ -13,7 +13,7 @@ trigger.addEventListener('click', function(e) {
 
 $(document).ready(function(){
     $('.bxslider').bxSlider({
-        // auto: true,
+        auto: true,
         mode: 'fade',
         slideMargin: 400
     });
