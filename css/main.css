@@ -945,7 +945,7 @@ footer {
 
 .contacts_info {
   position: relative;
-  margin-top: 70px;
+  margin-top: 60px;
   margin-left: 20px;
 }
 
@@ -972,7 +972,7 @@ footer {
 
 .contacts_address_title {
   max-width: 500px;
-  margin: 0 0 55px 0;
+  margin: 0 0 50px 0;
   padding-top: 10px;
   color: black;
   font-family: Verdana;
