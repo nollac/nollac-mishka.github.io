@@ -1308,7 +1308,7 @@ footer {
 
 .video_descr {
   float: left;
-  margin-top: 30px;
+  margin-top: 75px;
 }
 
 .video_text {
@@ -1317,10 +1317,17 @@ footer {
 }
 
 .video_descr_icon {
+  position: relative;
+}
+
+.video_descr_icon:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -45px;
+  width: 32px;
   height: 22px;
   background: url("../img/video-ic.svg") no-repeat;
-  background-size: 32px;
-  padding-top: 45px;
 }
 
 .video_text_title {

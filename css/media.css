@@ -38,8 +38,9 @@
     margin-top: 0;
   }
 
-  .video_descr_icon {
-    padding: 0 0 0 65px;
+  .video_descr_icon:before {
+    top: -2px;
+    left: -65px;
   }
 
   .video_text {
@@ -51,7 +52,7 @@
   }
 
   .video_text_title {
-    margin-left: 10px;
+    margin-left: 75px;
   }
 
   .video_descr_btn {
@@ -780,15 +781,15 @@
   .video_text_title {
     position: absolute;
     top: 8px;
-    left: -webkit-calc(50% - 135px);
-    left: calc(50% - 135px);
+    margin-left: 90px;
     width: 180px;
     padding-bottom: 20px;
     font-size: 16px;
   }
 
-  .video_descr_icon {
-    background-position: 0 10px;
+  .video_descr_icon:before {
+    top: 10px;
+    left: -55px;
   }
 }
 

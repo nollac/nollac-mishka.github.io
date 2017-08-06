@@ -1004,7 +1004,7 @@ footer
 
 .video_descr
 	float: left
-	margin-top: 30px
+	margin-top: 75px
 
 .video_text
 	position: relative
@@ -1012,11 +1012,20 @@ footer
 
 	
 .video_descr_icon
-	height: 22px
-	background: url("../img/video-ic.svg") no-repeat
-	-webkit-background-size: 32px
-	background-size: 32px
-	padding-top: 45px
+	position: relative
+	//height: 22px
+	//background: url("../img/video-ic.svg") no-repeat
+	//-webkit-background-size: 32px
+	//background-size: 32px
+	//padding-top: 45px
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top: -45px
+		width: 32px
+		height: 22px
+		background: url("../img/video-ic.svg") no-repeat
 
 .video_text_title
 	color: black
