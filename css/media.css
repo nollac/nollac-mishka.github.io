@@ -782,7 +782,7 @@
     position: absolute;
     top: 8px;
     margin-left: 90px;
-    width: 180px;
+    max-width: 120px;
     padding-bottom: 20px;
     font-size: 16px;
   }
@@ -877,9 +877,5 @@
 
   .presentation_title {
     margin-bottom: 115px;
-  }
-
-  .video_descr_icon {
-    background-position: 10px 10px;
   }
 }
