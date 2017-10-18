@@ -1,0 +1,85 @@
+.content_form
+	include ../second_menu
+	.form_title_wrapper
+		.container
+			h1.form_title Вязание на заказ
+		.zig_zag_line
+	.catalog_forms_item
+		.container
+			.form_items
+				p.form_item_title Мы будем рады воплотить в жизнь ваши пожелания! <br> Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+		form
+			.form_item_wrapper
+				.container
+					.order_item.clearfix
+						.item_type_title
+							span Тип
+						.label_wrapper
+							label.order_choice_type
+								input(type='radio',name='type', checked).item_input_radio
+								span Аксессуар для интерьера
+							label.order_choice_type
+								input(type='radio',name='type').item_input_radio
+								span Детская игрушка
+			.form_item_wrapper
+				.container
+					.order_item.clearfix
+						.item_type_title
+							span Цвет
+						.label_wrapper
+							label.order_choice_color
+								input(type='checkbox',name='color', checked).item_input_radio
+								span Белый
+							label.order_choice_color
+								input(type='checkbox',name='color').item_input_radio
+								span Серый
+							label.order_choice_color
+								input(type='checkbox',name='color').item_input_radio
+								span Тиффани
+							label.order_choice_color
+								input(type='checkbox',name='color').item_input_radio
+								span Черный
+							label.order_choice_color
+								input(type='checkbox',name='color').item_input_radio
+								span Розовый
+							label.order_choice_color
+								input(type='checkbox',name='color').item_input_radio
+								span Оранжевый
+			.form_item_wrapper
+				.container
+					.order_item.clearfix
+						.item_type_title
+							span ФИО
+						.order_item_name
+							.label_wrapper
+								label.form_user Фамилия:
+									input(type='text')
+								label.form_user Имя:
+									input(type='text')
+								label.form_user Отчество:
+									input(type='text')
+			.form_item_wrapper
+				.container
+					.order_item.clearfix
+						.item_type
+						.item_type_title
+							span Тел
+						.label_wrapper
+							label.form_user
+								input(type='tel', placeholder='+7 XXX XX XX')
+							.item_type_title
+								span E-mail
+							label.form_user
+								input(type='email', placeholder='Мы не будем спамить, честно!')
+			.form_item_wrapper
+				.container
+					.order_item.clearfix
+						.item_type
+						.item_type_title
+							span ДОП
+						.label_wrapper
+							label.form_info
+								input(type='textarea')
+					button.order_button Отправить заказ
+					.form_require
+						p.form_require_text Все поля являются обязательными

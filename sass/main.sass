@@ -818,7 +818,8 @@ footer
 	position: relative
 
 .content_catalog .second_menu,
-.catalog_title_wrapper
+.catalog_title_wrapper,
+.content_form .second_menu
 	background: #f1f1f1
 
 .catalog_title_wrapper
@@ -1059,8 +1060,56 @@ footer
 		color: #63d1bb
 		border-color: #63d1bb
 
+// ORDER PAGE
 
+.form_title_wrapper
+	@extend .catalog_title_wrapper
 
+.form_title
+	@extend .catalog_title_text
+
+.form_item_title
+	display: block
+	max-width: 640px
+	color: #444
+	font-family: OpenSans Regular, sans-serif
+	font-size: 16px
+	font-weight: 400
+	line-height: 30px
+	margin-left: 175px
+
+.form_item_wrapper:nth-child(2n)
+	background: #f1f1f1
+
+.order_choice_type
+	display: block
+
+.order_item
+	padding: 70px 0
+	margin-bottom: 70px
+
+.order_item label
+	color: black
+	font-family: Verdana Bold
+	font-size: 18px
+	font-weight: 700
+	line-height: 18px
+
+.item_type_title
+	color: #63d1bb
+	font-family: OpenSans Regular
+	font-size: 16px
+	font-weight: 700
+	line-height: 16px
+	text-transform: uppercase
+	margin: 0 70px
+	float: left
+
+.form_user
+	display: block
+
+.label_wrapper
+	float: left
 
 
 
