@@ -119,13 +119,13 @@
                   <div class="order_item_name">
                     <div class="label_wrapper">
                       <label class="form_user">Фамилия:
-                        <input type="text">
+                        <input class="input_name" type="text">
                       </label>
                       <label class="form_user">Имя:
-                        <input type="text">
+                        <input class="input_name" type="text">
                       </label>
                       <label class="form_user">Отчество:
-                        <input type="text">
+                        <input class="input_name" type="text">
                       </label>
                     </div>
                   </div>
@@ -135,15 +135,17 @@
             <div class="form_item_wrapper">
               <div class="container">
                 <div class="order_item clearfix">
-                  <div class="item_type"></div>
-                  <div class="item_type_title"><span>Тел</span></div>
+                  <div class="item_type">
+                    <div class="item_type_title"><span>Тел</span><span>E-mail</span></div>
+                  </div>
                   <div class="label_wrapper">
                     <label class="form_user">
-                      <input type="tel" placeholder="+7 XXX XX XX">
+                      <input class="input_contacts" type="tel" placeholder="+7 XXX XX XX">
                     </label>
-                    <div class="item_type_title"><span>E-mail</span></div>
+                  </div>
+                  <div class="label_wrapper">
                     <label class="form_user">
-                      <input type="email" placeholder="Мы не будем спамить, честно!">
+                      <input class="input_contacts" type="email" placeholder="Мы не будем спамить, честно!">
                     </label>
                   </div>
                 </div>
@@ -152,11 +154,12 @@
             <div class="form_item_wrapper">
               <div class="container">
                 <div class="order_item clearfix">
-                  <div class="item_type"></div>
-                  <div class="item_type_title"><span>ДОП</span></div>
+                  <div class="item_type">
+                    <div class="item_type_title"><span>ДОП</span></div>
+                  </div>
                   <div class="label_wrapper">
                     <label class="form_info">
-                      <input type="textarea">
+                      <input type="textarea" placeholder="Опишите все ваши пожелания к заказу">
                     </label>
                   </div>
                 </div>

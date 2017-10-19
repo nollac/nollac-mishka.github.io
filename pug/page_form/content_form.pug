@@ -53,33 +53,33 @@
 						.order_item_name
 							.label_wrapper
 								label.form_user Фамилия:
-									input(type='text')
+									input(type='text').input_name
 								label.form_user Имя:
-									input(type='text')
+									input(type='text').input_name
 								label.form_user Отчество:
-									input(type='text')
+									input(type='text').input_name
 			.form_item_wrapper
 				.container
 					.order_item.clearfix
 						.item_type
-						.item_type_title
-							span Тел
+							.item_type_title
+								span Тел
+								span E-mail
 						.label_wrapper
 							label.form_user
-								input(type='tel', placeholder='+7 XXX XX XX')
-							.item_type_title
-								span E-mail
+								input(type='tel', placeholder='+7 XXX XX XX').input_contacts
+						.label_wrapper
 							label.form_user
-								input(type='email', placeholder='Мы не будем спамить, честно!')
+								input(type='email', placeholder='Мы не будем спамить, честно!').input_contacts
 			.form_item_wrapper
 				.container
 					.order_item.clearfix
 						.item_type
-						.item_type_title
-							span ДОП
+							.item_type_title
+								span ДОП
 						.label_wrapper
 							label.form_info
-								input(type='textarea')
+								input(type='textarea', placeholder='Опишите все ваши пожелания к заказу')
 					button.order_button Отправить заказ
 					.form_require
 						p.form_require_text Все поля являются обязательными
